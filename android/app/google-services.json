@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "744270648866",
+    "project_id": "icoodesh",
+    "storage_bucket": "icoodesh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744270648866:android:6cbf39907fe4eb33b61c7b",
+        "android_client_info": {
+          "package_name": "com.icood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744270648866-heb7g5r8p5kkclsdku3g3q898pitbg5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icood",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "744270648866-r0u6ig6r6gh8oadvsns0mt73vfv5s38q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfjaozrTSuGOUbfCIeus1m8VDzU9Mup5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744270648866-r0u6ig6r6gh8oadvsns0mt73vfv5s38q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
