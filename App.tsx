@@ -1,24 +1,35 @@
-import * as React from 'react';
-import {View, Text} from 'react-native';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/Home';
+import AuthScreen from './src/screens/Auth';
+import {useAuth} from './src/hooks/useAuth';
 
-function HomeScreen() {
-  return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
-  );
-}
+const Auth = createNativeStackNavigator();
+const Home = createNativeStackNavigator();
 
-const Stack = createNativeStackNavigator();
+const AuthStack = () => (
+  <Auth.Navigator screenOptions={{headerShown: false}}>
+    <Auth.Screen name="SignIn" component={AuthScreen} />
+  </Auth.Navigator>
+);
+
+const HomeStack = () => (
+  <Home.Navigator screenOptions={{headerShown: false}}>
+    <Home.Screen name="Home" component={HomeScreen} />
+  </Home.Navigator>
+);
+
+const PrivateStack = () => {
+  const {user} = useAuth();
+
+  return user?.uid ? <HomeStack /> : <AuthStack />;
+};
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
+      <PrivateStack />
     </NavigationContainer>
   );
 };
