@@ -23,13 +23,13 @@ const Auth = () => {
     formState: {errors},
   } = useForm<FormData>();
 
-  const onKeyboardDismiss = () => {
+  const onDismissKeyboard = () => {
     Keyboard.dismiss();
   };
 
   const handleSignIn = async ({email, password}) => {
     try {
-      onKeyboardDismiss();
+      onDismissKeyboard();
       login(email, password);
     } catch (error) {
       Alert({message: error.message});
@@ -38,7 +38,7 @@ const Auth = () => {
 
   const handleSignUp = async ({email, password}) => {
     try {
-      onKeyboardDismiss();
+      onDismissKeyboard();
       register(email, password);
     } catch (error) {
       Alert({message: error.message});
