@@ -1,7 +1,7 @@
 
 # iCood
 
-![logo](.github/media/logo.png)
+<img src="https://i.postimg.cc/brVk3Dg3/logo.png" width=25% height=25%>
 
 iCood is a cross-platform mobile application built in React Native and designed for grocery shopping 
 
