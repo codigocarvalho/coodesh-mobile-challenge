@@ -73,7 +73,7 @@ Use the link below to download the apk (Android only)
 
 ## Author
 
-[@henrineken](https://www.github.com/henrineken)
+[@codigocarvalho](https://www.github.com/codigocarvalho)
 
 
 ## References
